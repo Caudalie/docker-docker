@@ -10,3 +10,5 @@ RUN apk update \
 
 RUN curl -fsSL https://bootstrap.pypa.io/get-pip.py | python
 
+RUN pip install urllib3===1.22 \
+    && pip install awscli docker-compose
